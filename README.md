@@ -1,16 +1,18 @@
-# Final-project-safety-and-school-choices
-# Correlation Between Performance and Safety of High Schools
+# Final-project-safety-and-school-performance
+# Neighborhood Safety and High School Performances
 Final Project of Data Anaysis for Course PPHA30550
 
-### Targets
+### The Question
 
-The targets of this project is to understand the data correlations between performances high schools and the safety (crime rates) of their locations. The study is conducted based on the school profiles and crime records on three resolutions: states, cities and districts.
 
-### Data sources:
+### Past Work
+
+### Data sources
+Check-out scripts for the data in this analysis can be found in my **The folder [`data`](https://github.com/yuewending/PPHA30550_Final_Project/tree/master/data)**  repository.
+Check-out list of contents for DATA folder in  **file [`0intro.md`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/DATA/0intro.md)** 
 
 #### Performances of High Schools
 
-* Data of high schools are from the GreatSchools website https://www.greatschools.org/, which is a nonprofit project helps parents to choose high schools for their children by providing different indicators of school qualities. The information include basic profile (name, address, level ...), academic reports (scores, graduation ratio, attending college ratio ...) and other school climate data (incomes, races, ...).
 
 #### Crime Rates
 
@@ -25,6 +27,8 @@ Crime rates are obtained at three levels (resolutions): state, city and district
   * Chicago
   * Boston
   * Los angeles
+  
+### Investigation
 
 ### Step 1: Obtaining List of US High Schools
 
