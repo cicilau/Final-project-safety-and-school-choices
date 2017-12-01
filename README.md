@@ -1,6 +1,5 @@
-# Final-project-safety-and-school-performance
+## Final Project for Introduction to Programming 
 # Neighborhood Safety and High School Performances
-Final Project of Data Anaysis for Course PPHA30550
 
 ### The Question
 
@@ -11,7 +10,13 @@ Final Project of Data Anaysis for Course PPHA30550
 Check-out scripts for the data in this analysis can be found in my **The folder [`data`](https://github.com/yuewending/PPHA30550_Final_Project/tree/master/data)**  repository.
 Check-out list of contents for DATA folder in  **file [`0intro.md`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/DATA/0intro.md)** 
 
-#### Performances of High Schools
+#### 1.High Schools locations and their safety level
+We are using data of performance of public schools in chicago from file Chicago Public Schools-School Progress Reports SY1617, downloaded from city of Chicago data portal(https://data.cityofchicago.org/Education/Chicago-Public-Schools-School-Progress-Reports-SY1/cp7s-7gxg). 
+We selected 5 variables: "School_ID','Short_Name', 'Safety_Level', 'School_Latitude', and'School_Longitude', gave values of 1 to 5 to safety levels of 'very weak', 'weak', 'neutral', 'strong' and 'very strong', dropped schools with 'not enough data', and saved these as refined_progress.csv. 
+
+
+
+Check-out list of contents for DATA folder in  **file [`0intro.md`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/DATA/0intro.md)** 
 
 
 #### Crime Rates
