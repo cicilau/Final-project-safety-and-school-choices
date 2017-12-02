@@ -31,7 +31,7 @@ We downloaded average ACT scores on school level from year 2001 to year 2016 and
 Check-out codes in  **file [`act.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/act.py)** , **file [`graduation.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/graduation.py)**, **file [`college.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/college.py)**, and  **file [`rating.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/rating.py)**
 
 #### 3. Crime records
-Crime data are from City of Chicago Data Portal. We downloaded the data sets for 2016 and 2017 to cover the 2016 school year and selected “Case ID”, “Crime Type”, “Latitude” and “Longitude”. The key to this project is matching the crime data to schools to reflect the safety conditions of the neighborhood around. Here we used the number of crime cases within 1km distance to the school as the variable. Therefore, We mapped the criminal cases to schools with their latitudes and longitude. 
+Crime data are from City of Chicago Data Portal. We downloaded the data sets for 2016 and 2017 to cover the 2016 school year and selected “Case ID”, “Crime Type”, “Latitude” and “Longitude”. The key to this project is matching the crime data to schools to reflect the safety conditions of the neighborhood around. Here we used the number of crime cases within 0.5km distance to the school as the variable. Therefore, We mapped the criminal cases to schools with their latitudes and longitude. 
 
 Check-out codes in  **file [`map_crime.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/map_crime.py)** 
 
@@ -41,6 +41,8 @@ The numbers of criminal cases happend in each school's neighborhood were counted
 Check-out codes in  **file [`finalize_data.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/finalize_data.py)** 
 
 ### PART III. Investigation
+
+Simple description analysis has been added by section in **file [`data_analyze.ipynb`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/data_analyze.ipynb)**.
 
 #### 1. Summary of data
 We analyzed 181 high schools from CPS in total. The following graphs show the distributions of SQRP level, safety level, average ACT scores, graduation rate, and college enrollment rate. First, the counts of schools on different SQRP ratings and safety levels are plotted below. For the SQRP ratings, schools with higher numbers have better qualities. For the safety levels, schools with higher numbers have more responses with safer neighborhoods. The number of schools rating at Level 3 is 2. The differences between school counts on other levels are not very large. There are two peaks at Level 2 and Level 1+. The median score is 3, which is Level 2+.
