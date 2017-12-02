@@ -23,12 +23,17 @@ for id in schools:
     if id == '':
         continue
 
-    time.sleep(1)
+# wait three second to do each query to avoid the website to block us
+    time.sleep(3)
 
+# get the page and parse its html content
     html_doc = requests.get(url_prefix + id)
     soup = bs(html_doc.text, 'html.parser')
+
+    # find the target span element with the specific id
     span = soup.find('span', {'id':'ctl00_ContentPlaceHolder1_lbOverallRating2'})
 
+# some schools doen't have a valid rating, so skip them
     if span is None:
         continue
 
@@ -36,6 +41,8 @@ for id in schools:
 
     if level not in levels:
         continue
+
+# get the text of level and convert it to be the number from 1 to 5
 
     ilevel = levels.index(level)
 
@@ -46,4 +53,3 @@ for id in schools:
 
 df = pd.DataFrame({'School_ID': data_id, 'Level': data_level})
 df.to_csv('DATA/ratings.csv', index=False)
-
