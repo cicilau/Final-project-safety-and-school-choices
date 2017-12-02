@@ -11,7 +11,7 @@ The target of this project is to explore the correlations between academic perfo
 
 
 #### Past Work
-In terms of school choice, based on a survey conducted in Ohio region, safety is the top one concern when choosing schools for their children. Another survey of survey the D.C. Opportunity Scholarship Program showed the similar results: parents and children names safety top consideration, regardless of their ethnicities or ages ( **file [`Stewart and Wolf, 2016`](http://educationnext.org/power-to-the-people-the-school-choice-journey-review-stewart-wolf/)** ). In terms of school performance, a study conduct in Florida showed that  a 1 percentage point increase in a school’s mean school safety score increases a school’s FCAT score by 18 points, on average (Christopher Duszka, 2015). Not to mention the research on 5Essentials reports  is a clear statement on importance of safety. 
+In terms of school choice, based on a survey conducted in Ohio region, safety is the top one concern when choosing schools for their children. Another survey of survey the D.C. Opportunity Scholarship Program showed the similar results: parents and children names safety top consideration, regardless of their ethnicities or ages ( **[`Stewart and Wolf, 2016`](http://educationnext.org/power-to-the-people-the-school-choice-journey-review-stewart-wolf/)** ). In terms of school performance, a study conduct in Florida showed that  a 1 percentage point increase in a school’s mean school safety score increases a school’s FCAT score by 18 points, on average (Christopher Duszka, 2015). Not to mention the research on 5Essentials reports  is a clear statement on importance of safety. 
 
 
 ### PART II. Data sources
