@@ -1,5 +1,7 @@
-## Final Project for Introduction to Programming 
 # Neighborhood Safety and High School Performances
+Final Project for Introduction to Programming 
+Xiaofan Liu, Yuewen Ding
+12/1/2017
 
 ### The Question
 
@@ -7,32 +9,27 @@
 ### Past Work
 
 ### Data sources
-Check-out scripts for the data in this analysis can be found in my **The folder [`data`](https://github.com/yuewending/PPHA30550_Final_Project/tree/master/data)**  repository.
-Check-out list of contents for DATA folder in  **file [`0intro.md`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/DATA/0intro.md)** 
+Check-out scripts for the data in this analysis can be found in my **The folder [`data`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/DATA)**  repository.
+Check-out list of contents in  **file [`Contents List.md`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/Contents List.md)** 
+The performance data are from several different portals but they are all from Chicago Public Schools (CPS) originally. CPS assign each school a unique School ID in all different data sets and studies, so it helps us combine variables from multiple files by matching the School ID.
 
 #### 1.High Schools locations and their safety level
 We are using data of performance of public schools in chicago from file Chicago Public Schools-School Progress Reports SY1617, downloaded from city of Chicago data portal(https://data.cityofchicago.org/Education/Chicago-Public-Schools-School-Progress-Reports-SY1/cp7s-7gxg). 
+
 We selected 5 variables: "School_ID','Short_Name', 'Safety_Level', 'School_Latitude', and'School_Longitude', gave values of 1 to 5 to safety levels of 'very weak', 'weak', 'neutral', 'strong' and 'very strong', dropped schools with 'not enough data', and saved these as refined_progress.csv. 
 
+Check-out codes in  **file [`progress_report.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/progress_report.py)** 
 
+#### 2.High Schools Performance
+We downloaded average ACT scores on school level from year 2001 to year 2016 and selected only 'school ID', 'Year' and 'Composite'(ACT scores). Similarly from cps.edu, we downloaded 'CPS Graduates College Enrollment/Persistence by School for 2010-2015' for college enrollment rate, 'School 5 Year Cohort Rates' for cohort dropout rates and graduation rates, and converted SQRP(School Overall Rating Policy) levels from 'level 3', 'level 2', 'level 2+', 'level 2', 'level 1' and 'level 1+' to 1 to 5. 
 
-Check-out list of contents for DATA folder in  **file [`0intro.md`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/DATA/0intro.md)** 
+Check-out codes in  **file [`act.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/act.py)** , **file [`graduation.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/graduation.py)**, **file [`college.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/college.py)**, and  **file [`rating.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/rating.py)**
 
+#### 3. Crime records
+Crime data are from Chicago Data Portal. We downloaded the data sets for 2016 and 2017 to cover the 2016 school year and selected “Case ID”, “Crime Type”, “Latitude” and “Longitude”. 
 
-#### Crime Rates
+heck-out codes in  **file [`act.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/DATA/progress_report.py)** 
 
-Crime rates are obtained at three levels (resolutions): state, city and district.
-
-* **State** crime rates are from **Uniform Crime Reporting (UCR) Statistics** https://www.ucrdatatool.gov/ with the "state and national estimates" data portal for the year 2014. The CSV formatted raw data file is downloaded manually.
-
-* **City** crime rates are also from **URC Statistics** https://www.ucrdatatool.gov/ with the "Local law enforcement agencies" data portal for the year 2014. Cities of four states (NY, MA, CA, IL) are used for this study. The CSV formatted raw data file is downloaded manually.
-
-* **District** crime rates are obtained for four cities (New York City, Chicago, Boston, Los angeles) with different city data portals.
-  * New York City
-  * Chicago
-  * Boston
-  * Los angeles
-  
 ### Investigation
 
 ### Step 1: Obtaining List of US High Schools
