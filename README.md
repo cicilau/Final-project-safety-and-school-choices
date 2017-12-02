@@ -11,7 +11,7 @@ The target of this project is to explore the correlations between academic perfo
 
 
 #### Past Work
-In terms of school choice, based on a survey conducted in Ohio region, safety is the top one concern when choosing schools for their children. Another survey of survey the D.C. Opportunity Scholarship Program showed the similar results: parents and children names safety top consideration, regardless of their ethnicities or ages ( **[`Stewart and Wolf, 2016`](http://educationnext.org/power-to-the-people-the-school-choice-journey-review-stewart-wolf/)** ). In terms of school performance, a study conduct in Florida showed that  a 1 percentage point increase in a school’s mean school safety score increases a school’s FCAT score by 18 points, on average (Christopher Duszka, 2015). Not to mention the research on 5Essentials reports  is a clear statement on importance of safety. 
+In terms of school choice, based on a survey conducted in Ohio region, safety is the top one concern when choosing schools for their children. Another survey of survey the D.C. Opportunity Scholarship Program showed the similar results: parents and children names safety top consideration, regardless of their ethnicities or ages ( **[`Stewart and Wolf, 2016`](http://educationnext.org/power-to-the-people-the-school-choice-journey-review-stewart-wolf/)** ). In terms of school performance, a study conduct in Florida showed that  a 1 percentage point increase in a school’s mean school safety score increases a school’s FCAT score by 18 points, on average ( **[`Christopher Duszka, 2015`](http://www.ijessnet.com/wp-content/uploads/2015/09/4.pdf)**). Not to mention the research on 5Essentials reports  is a clear statement on importance of safety. 
 
 
 ### PART II. Data sources
@@ -43,27 +43,20 @@ Check-out codes in  **file [`finalize_data.py`](https://github.com/cicilau/Final
 
 ### PART III. Investigation
 
-#### 1.Summary of data
-We analyzed 181 high schools from CPS in total. The following graphs show the distributions of SQRP level, safety level, average ACT scores, graduation rate, and college enrollment rate. 
+#### 1. Summary of data
+We analyzed 181 high schools from CPS in total. The following graphs show the distributions of SQRP level, safety level, average ACT scores, graduation rate, and college enrollment rate. First, the counts of schools on different SQRP ratings and safety levels are plotted below. For the SQRP ratings, schools with higher numbers have better qualities. For the safety levels, schools with higher numbers have more responses with safer neighborhoods. 
 
-<img src="data_analyze/output_5_0.png" width="49%"> <img src="data_analyze/output_6_0.png" width="49%">
-<img src="data_analyze/output_5_1.png" width="49%"> <img src="data_analyze/output_6_1.png" width="49%">
-
-<img src="data_analyze/output_8_0.png" width="32%"> <img src="data_analyze/output_9_0.png" width="32%"> <img src="data_analyze/output_10_0.png" width="32%">
+<img src="RESULTS/output_5_0.png" width="32%"> <img src="RESULTS/output_6_0.png" width="32%"><img src="RESULTS/output_13_1.png" width="32%">
+<img src="RESULTS/output_8_0.png" width="32%"> <img src="RESULTS/output_9_0.png" width="32%"> <img src="RESULTS/output_10_0.png" width="32%">
 
 
 
 
-### Step 2: Download School Performace Data
+#### 2. Different factors on map
+Following scatter plots are differents factors on Chicago map. Purple means 
 
-On each page, the variables are within DIV elements with different CSS class names. We checked the source code of the web page, and extract the information based on such characteristics. The PYTHON code is written looping over all links and extract the information to make a CSV table.
-```
-step1_school_list.py
-```
-And this code is to finish three tasks:
-* Download a web page from links in **data/school_links.txt**
-* Parse the web page and find all variables that we need
-* Write out variables in the CSV table format at **data/school_performance.csv**.
+<img src="data_analyze/output_5_1.png" width="32%"> <img src="data_analyze/output_6_1.png" width="32%"> <img src="data_analyze/output_19_0.png" width="32%">
+<img src="data_analyze/output_8_1.png" width="32%"> <img src="data_analyze/output_9_1.png" width="32%"> <img src="data_analyze/output_10_1.png" width="32%">
 
 ### Step 3: Process of State Crime Data and Correlation Analysis
 
