@@ -89,20 +89,22 @@ Following scatter plots are differents factors on Chicago map(point your mouse o
 <img src="RESULTS/output_8_1.png" width="32%" title="ACT Scores"> <img src="RESULTS/output_9_1.png" width="32%"  title="Grad rate"> <img src="RESULTS/output_10_1.png" width="32%"  title="College enrollment rate">
 
 Adding the school attendance boundaries, the pattern is much easier to identify. There are three dark green areas on the left map, indicating the three neighborhoods with the best overall performance. In the middle area of the left map, the color is light green to white, indicating that schools there have very low levels of overall performance. For the right map, it's clear that the darkest red area, the area with highest number of crime per school, overlaps with the area of schools with lowest levels of overall performance. It's reasonale for us to infer that the number of crimes is highly associated with school performance. 
+
 <img src="RESULTS/output_39_1.png" width="45%"> <img src="RESULTS/output_42_1.png" width="45%">
+
 
 #### 3: Scatter Matrix Analysis of Selected Variables
 The pair-wise scatter plots are shown below for academic factors and the total crime predictor. Strong correlations can be observed from the performance variables (ACT, Graudation and College enrollment). It implies that the three variables we selected are consistent to assess the qualities of high schools, and their trends are in good agreement. However there is nothing obvious between these three factors and total number of crimes.
 
-<img src="data_analyze/output_23_1.png" width="65%">
+<img src="RESULTS/output_23_1.png" width="65%">
 
 
 #### Step 4: Correlations with number of total crimes (marked as 'total crimes'below)
 Regression analysis with OLS method was used on the varible of total crimes. The plots and trend lines for the four performance variables are shown below. All of them display clear trends that higher crime rates will lower the performance.
 
-<img src="data_analyze/output_27_1.png" width="49%"> <img src="data_analyze/output_29_1.png" width="49%">
+<img src="RESULTS/output_27_1.png" width="49%"> <img src="RESULTS/output_29_1.png" width="49%">
 
-<img src="data_analyze/output_30_1.png" width="49%"> <img src="data_analyze/output_31_1.png" width="49%">
+<img src="RESULTS/output_30_1.png" width="49%"> <img src="RESULTS/output_31_1.png" width="49%">
 
 The statistics parameters are summarized in the table below. All the slope coeffients are negative and statistically significant (>95% probabilities that the true values are not zero).
 
