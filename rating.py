@@ -46,3 +46,4 @@ for id in schools:
 
 df = pd.DataFrame({'School_ID': data_id, 'Level': data_level})
 df.to_csv('DATA/ratings.csv', index=False)
+
