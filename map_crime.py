@@ -3,25 +3,25 @@
 
 import pandas as pd
 '''
-data = pd.read_csv('data/crime_2016.csv',
+data = pd.read_csv('DATA/crime_2016.csv',
     usecols = ['Case Number','Date','Primary Type','Arrest','Latitude','Longitude'],
     parse_dates = ['Date'])
 
 refined_data = data[data['Date']>'2016-08-31']
-refined_data.to_csv('data/refined_crime_2016.csv', index=False)
+refined_data.to_csv('DATA/refined_crime_2016.csv', index=False)
 
-data = pd.read_csv('data/crime_2017.csv',
+data = pd.read_csv('DATA/crime_2017.csv',
     usecols = ['Case Number','Date','Primary Type','Arrest','Latitude','Longitude'],
     parse_dates = ['Date'])
 
 refined_data = data[data['Date']<'2017-09-01']
-refined_data.to_csv('data/refined_crime_2017.csv', index=False)
+refined_data.to_csv('DATA/refined_crime_2017.csv', index=False)
 
 
-crime2016 = pd.read_csv('data/refined_crime_2016.csv')
-crime2017 = pd.read_csv('data/refined_crime_2017.csv')
+crime2016 = pd.read_csv('DATA/refined_crime_2016.csv')
+crime2017 = pd.read_csv('DATA/refined_crime_2017.csv')
 crimes = pd.concat([crime2016, crime2017])
-crimes.to_csv('data/refined_crime_sy2016.csv', index=False)
+crimes.to_csv('DATA/refined_crime_sy2016.csv', index=False)
 
 '''
 
@@ -41,8 +41,8 @@ def distance(origin, destination):
 
     return d
 
-crimes = pd.read_csv('data/refined_crime_sy2016.csv')
-schools = pd.read_csv('data/refined_progress.csv')
+crimes = pd.read_csv('DATA/refined_crime_sy2016.csv')
+schools = pd.read_csv('DATA/refined_progress.csv')
 type_crime = []
 
 crime_type = []
@@ -72,7 +72,7 @@ for index_c, crime in crimes.iterrows():
         print("Finish mapping crime %d/%d" % (index_c, len(crimes)))
 
         df = pd.DataFrame({'Crime_Type': crime_type, 'School_ID': school_id, 'Crime_ID': crime_id, 'Distance': distances})
-        df.to_csv('data/school_crimes.csv', index=False)
+        df.to_csv('DATA/school_crimes.csv', index=False)
 
 
-pd.DataFrame({'Type ID': range(len(type_crime)), 'Type': type_crime}).to_csv('data/crime_types.csv', index=False)
+pd.DataFrame({'Type ID': range(len(type_crime)), 'Type': type_crime}).to_csv('DATA/crime_types.csv', index=False)
