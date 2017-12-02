@@ -4,12 +4,17 @@ Final Project for Introduction to Programming
 Xiaofan Liu, Yuewen Ding
 12/1/2017
 
-### The Question
+### PART I. The Question
+Students’ decisions making process on future education is influenced by a combination of factors, including but not limited to their past academic achievements, quality of schools, interests and external environment. There are numerous studies on school choices. The 5Essentials Reports for CPS draw from the 2016 My Voice, My School Student and Teacher Surveys, which are administered in collaboration with The University of Chicago Consortium on Chicago School Research (CCSR), clearly stated that schools that score strongly on such measures as supportive environment (including safety) are much more likely to improve academic achievement for their students. 
+
+The target of this project is to explore the correlations between academic performances and the safety of schools’ locations for Chicago public high schools.  We plotted different academic factors and safety levels on maps to investigate clustering patterns, tested the correlations between total number of crimes near the school and different academic factors, and further broke data down by types of crimes to test relationships with different academic factors.  
 
 
-### Past Work
+#### Past Work
+In terms of school choice, based on a survey conducted in Ohio region, safety is the top one concern when choosing schools for their children. Another survey of survey the D.C. Opportunity Scholarship Program showed the similar results: parents and children names safety top consideration, regardless of their ethnicities or ages ( **file [`Stewart and Wolf, 2016`](http://educationnext.org/power-to-the-people-the-school-choice-journey-review-stewart-wolf/)** ). In terms of school performance, a study conduct in Florida showed that  a 1 percentage point increase in a school’s mean school safety score increases a school’s FCAT score by 18 points, on average (Christopher Duszka, 2015). Not to mention the research on 5Essentials reports  is a clear statement on importance of safety. 
 
-### Data sources
+
+### PART II. Data sources
 Check-out scripts for the data in this analysis can be found in my **The folder [`DATA`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/DATA)**  repository.
 Check-out list of contents in  **file [`Contents List.md`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/Contents_List.md)** 
 The performance data are from several different portals but they are all from Chicago Public Schools (CPS) originally. CPS assign each school a unique School ID in all different data sets and studies, so it helps us combine variables from multiple files by matching the School ID.
@@ -36,21 +41,18 @@ The numbers of criminal cases happend in each school's neighborhood were counted
 
 Check-out codes in  **file [`finalize_data.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/finalize_data.py)** 
 
-### Investigation
+### PART III. Investigation
 
-### Step 1: Obtaining List of US High Schools
+#### 1.Summary of data
+We analyzed 181 high schools from CPS in total. The following graphs show the distributions of SQRP level, safety level, average ACT scores, graduation rate, and college enrollment rate. 
 
-There's no direct export of table or database file from the greatshools.org, instead, the variables of each school are provided in a seperated page. The links are in the format of "/texas/lubbock/19361-Canyon-Lakes/" combined with the state name, city name, an internal ID and the school name. Therefore, we need to obtain the list of URL links of the schools we care for.
+<img src="data_analyze/output_5_0.png" width="49%"> <img src="data_analyze/output_6_0.png" width="49%">
+<img src="data_analyze/output_5_1.png" width="49%"> <img src="data_analyze/output_6_1.png" width="49%">
 
-The list can be obtained via its search engine via the GET method. (https://www.greatschools.org/search/search.page) For this project, we select all public high school for the filtering (private school data are not provided). The results from the search are paged, so we need to first obtain the number of pages, and then query the page one by one, and finally extract the school links from each result page. The PYTHON code is written in,
-```
-step1_school_list.py
-```
-And this code is to finish four tasks:
-* Get the number of pages from the search
-* Download all HTML pages
-* Obtain school links based on the CSS class name
-* Dump all links in the file **data/school_links.txt**
+<img src="data_analyze/output_8_0.png" width="32%"> <img src="data_analyze/output_9_0.png" width="32%"> <img src="data_analyze/output_10_0.png" width="32%">
+
+
+
 
 ### Step 2: Download School Performace Data
 
