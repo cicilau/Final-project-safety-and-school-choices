@@ -13,7 +13,7 @@ request.urlretrieve('https://data.cityofchicago.org/api/views/cp7s-7gxg/rows.csv
 raw_data = pd.read_csv('data/raw_progress.csv')
 print("Import CSV file of [%d] schools" % (len(raw_data)))
 
-# Filter out high schools, and give values for safety level =, 5 means the highest level "very strong"
+# Filter out high schools
 hs_data = raw_data.loc[raw_data['Primary_Category'] == 'HS']
 print("Number of high schools = %d" % (len(hs_data)))
 
