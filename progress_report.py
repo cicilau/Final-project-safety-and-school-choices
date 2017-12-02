@@ -7,10 +7,10 @@ import urllib.request as request
 #Somehow 'import requests' does not work on my computer here, I have to use 'urllib.request'.
 
 # Download the file
-request.urlretrieve('https://data.cityofchicago.org/api/views/cp7s-7gxg/rows.csv?accessType=DOWNLOAD', 'data/raw_progress.csv')
+request.urlretrieve('https://data.cityofchicago.org/api/views/cp7s-7gxg/rows.csv?accessType=DOWNLOAD', 'DATA/raw_progress.csv')
 
 # Import raw csv data with all schools
-raw_data = pd.read_csv('data/raw_progress.csv')
+raw_data = pd.read_csv('DATA/raw_progress.csv')
 print("Import CSV file of [%d] schools" % (len(raw_data)))
 
 # Filter out high schools
@@ -44,7 +44,7 @@ selected_columns = [
 refined_data = hs_data[selected_columns]
 
 # Dump refined data
-refined_data.to_csv('data/refined_progress.csv', index=False)
+refined_data.to_csv('DATA/refined_progress.csv', index=False)
 
 # Dump school IDs only (no header)
-refined_data['School_ID'].to_csv('data/school_id.csv', index=False, header=False)
+refined_data['School_ID'].to_csv('DATA/school_id.csv', index=False, header=False)
