@@ -57,6 +57,7 @@ Following scatter plots are differents factors on Chicago map. Purple means
 
 <img src="RESULTS/output_5_1.png" width="32%" title="SQRP"> <img src="RESULTS/output_6_1.png" width="32%"> <img src="RESULTS/output_19_0.png" width="32%">
 <img src="RESULTS/output_8_1.png" width="32%"> <img src="RESULTS/output_9_1.png" width="32%"> <img src="RESULTS/output_10_1.png" width="32%">
+![alt tag](http://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/RESULTS/output_8_1.png/to/img.png)
 
 ### Step 3: Process of State Crime Data and Correlation Analysis
 
