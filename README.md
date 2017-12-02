@@ -10,7 +10,7 @@ Xiaofan Liu, Yuewen Ding
 ### Past Work
 
 ### Data sources
-Check-out scripts for the data in this analysis can be found in my **The folder [`data`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/DATA)**  repository.
+Check-out scripts for the data in this analysis can be found in my **The folder [`DATA`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/DATA)**  repository.
 Check-out list of contents in  **file [`Contents List.md`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/Contents_List.md)** 
 The performance data are from several different portals but they are all from Chicago Public Schools (CPS) originally. CPS assign each school a unique School ID in all different data sets and studies, so it helps us combine variables from multiple files by matching the School ID.
 
@@ -27,9 +27,14 @@ We downloaded average ACT scores on school level from year 2001 to year 2016 and
 Check-out codes in  **file [`act.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/act.py)** , **file [`graduation.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/graduation.py)**, **file [`college.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/college.py)**, and  **file [`rating.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/rating.py)**
 
 #### 3. Crime records
-Crime data are from Chicago Data Portal. We downloaded the data sets for 2016 and 2017 to cover the 2016 school year and selected “Case ID”, “Crime Type”, “Latitude” and “Longitude”. 
+Crime data are from City of Chicago Data Portal. We downloaded the data sets for 2016 and 2017 to cover the 2016 school year and selected “Case ID”, “Crime Type”, “Latitude” and “Longitude”. The key to this project is matching the crime data to schools to reflect the safety conditions of the neighborhood around. Here we used the number of crime cases within 1km distance to the school as the variable. Therefore, We mapped the criminal cases to schools with their latitudes and longitude. 
 
-heck-out codes in  **file [`act.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/DATA/progress_report.py)** 
+Check-out codes in  **file [`map_crime.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/map_crime.py)** 
+
+#### 4.Merging data
+The numbers of criminal cases happend in each school's neighborhood were counted based on distance to school's location( “Latitude” and “Longitude” ) and added as a new column to the final data table. We paired up datasets above on 'School ID' to put all data needed in to a final data table called data_table.csv.
+
+Check-out codes in  **file [`finalize_data.py`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/finalize_data.py)** 
 
 ### Investigation
 
