@@ -46,7 +46,7 @@ Check-out codes in  **file [`finalize_data.py`](https://github.com/cicilau/Final
 #### 1. Summary of data
 We analyzed 181 high schools from CPS in total. The following graphs show the distributions of SQRP level, safety level, average ACT scores, graduation rate, and college enrollment rate. First, the counts of schools on different SQRP ratings and safety levels are plotted below. For the SQRP ratings, schools with higher numbers have better qualities. For the safety levels, schools with higher numbers have more responses with safer neighborhoods. 
 
-<img src="RESULTS/output_5_0.png" width="32%"> <img src="RESULTS/output_6_0.png" width="32%"><img src="RESULTS/output_13_1.png" width="32%">
+![SQRP]<img src="RESULTS/output_5_0.png" width="32%"> <img src="RESULTS/output_6_0.png" width="32%"><img src="RESULTS/output_13_1.png" width="32%">
 <img src="RESULTS/output_8_0.png" width="32%"> <img src="RESULTS/output_9_0.png" width="32%"> <img src="RESULTS/output_10_0.png" width="32%">
 
 
