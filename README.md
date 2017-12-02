@@ -55,7 +55,7 @@ We analyzed 181 high schools from CPS in total. The following graphs show the di
 #### 2. Different factors on map
 Following scatter plots are differents factors on Chicago map. Purple means 
 
-<img src="RESULTS/output_5_1.png" width="32%"> <img src="RESULTS/output_6_1.png" width="32%"> <img src="RESULTS/output_19_0.png" width="32%">
+<img src="RESULTS/output_5_1.png" width="32%" title="SQRP"> <img src="RESULTS/output_6_1.png" width="32%"> <img src="RESULTS/output_19_0.png" width="32%">
 <img src="RESULTS/output_8_1.png" width="32%"> <img src="RESULTS/output_9_1.png" width="32%"> <img src="RESULTS/output_10_1.png" width="32%">
 
 ### Step 3: Process of State Crime Data and Correlation Analysis
