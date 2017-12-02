@@ -1,5 +1,6 @@
 # Neighborhood Safety and High School Performances
 Final Project for Introduction to Programming 
+
 Xiaofan Liu, Yuewen Ding
 12/1/2017
 
@@ -10,7 +11,7 @@ Xiaofan Liu, Yuewen Ding
 
 ### Data sources
 Check-out scripts for the data in this analysis can be found in my **The folder [`data`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/DATA)**  repository.
-Check-out list of contents in  **file [`Contents List.md`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/Contents List.md)** 
+Check-out list of contents in  **file [`Contents List.md`](https://github.com/cicilau/Final-project-safety-and-school-choices/tree/master/Contents_List.md)** 
 The performance data are from several different portals but they are all from Chicago Public Schools (CPS) originally. CPS assign each school a unique School ID in all different data sets and studies, so it helps us combine variables from multiple files by matching the School ID.
 
 #### 1.High Schools locations and their safety level
