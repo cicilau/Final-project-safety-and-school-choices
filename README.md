@@ -1,5 +1,8 @@
 # To whom it may concern,
-# I am using this file as a writing sample to aaply for EPIC’s Pre-Doctoral Fellowship Program. This is a final project made for course Introduction to Programming(PPHA 30550, James Saxon). I shared this for the reason that I was not allowed to share my currently work on workforce program evaluation. I am sorry that I don't have a more up-to-date writing sample.
+
+# I am using this file as a writing sample to aaply for EPIC’s Pre-Doctoral Fellowship Program. 
+# This is a final project made for course Introduction to Programming(PPHA 30550, James Saxon). I shared this for the reason that I was not allowed to share my currently work on workforce program evaluation for OAI. I am sorry that I don't have a more up-to-date writing sample.
+
 # Thank you for your time!
 # Xiaofan Liu
 
