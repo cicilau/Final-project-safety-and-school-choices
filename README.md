@@ -1,7 +1,7 @@
 # Neighborhood Safety and High School Performances
 Final Project for Introduction to Programming 
 
-Xiaofan Liu, Yuewen Ding
+Xiaofan Liu
 12/1/2017
 
 ### PART I. The Question
